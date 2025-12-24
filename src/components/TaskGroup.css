@@ -1,0 +1,82 @@
+.task-group {
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  transition: border-color 0.2s ease;
+}
+
+.task-group + .task-group {
+  border-top: none;
+}
+
+.task-group--complete .task-group-header {
+  background-color: #e8f9f6;
+}
+
+.task-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.2s ease;
+  border: none;
+  width: 100%;
+}
+
+.task-group-header:hover {
+  background-color: #fafafa;
+}
+
+.task-group-header:focus-visible {
+  outline: 2px solid #00c9a7;
+  outline-offset: -2px;
+}
+
+.task-group-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-group-icon {
+  color: #666;
+  flex-shrink: 0;
+}
+
+.task-group--complete .task-group-icon {
+  color: #00c9a7;
+}
+
+.task-group-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.task-group-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-group-toggle {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+}
+
+.task-group-chevron {
+  color: #999;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.task-group-chevron--expanded {
+  transform: rotate(180deg);
+}
+
+.task-group-content {
+  border-top: 1px solid #e5e5e5;
+  background-color: white;
+}
